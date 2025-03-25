@@ -2,12 +2,12 @@ import React from "react";
 import { Text, View } from "react-native";
 import styles from './StyleSheet.js';
 
-const NewsyScreen = ({ navigation }) => {
+const FilmyScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
-            <Text style={{ fontSize: 40 }}>Newsy</Text>
+            <Text style={{ fontSize: 40 }}>Filmy</Text>
         </View>
     );
 }
 
-export default NewsyScreen;
+export default FilmyScreen;

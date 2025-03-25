@@ -2,12 +2,12 @@ import React from "react";
 import { Text, View } from "react-native";
 import styles from './StyleSheet.js';
 
-const SerialeScreen = () => {
+const ProfilScreen = () => {
     return (
         <View style={styles.container}>
-            <Text style={{ fontSize: 40 }}>Seriale</Text>
+            <Text style={{ fontSize: 40 }}>Profil</Text>
         </View>
     );
 }
 
-export default SerialeScreen;
+export default ProfilScreen;

@@ -2,12 +2,12 @@ import React from "react";
 import { Text, View } from "react-native";
 import styles from './StyleSheet.js';
 
-const ProfilScreen = () => {
+const RankingScreen = () => {
     return (
         <View style={styles.container}>
-            <Text style={{ fontSize: 40 }}>Profil</Text>
+            <Text style={{ fontSize: 40 }}>Ranking</Text>
         </View>
     );
 }
 
-export default ProfilScreen;
+export default RankingScreen;
