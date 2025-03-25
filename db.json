@@ -1,0 +1,117 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "login": "john",
+      "password": "123",
+      "photoUser": "",
+      "numberOfOpinions": 3,
+      "watchlist": [103, 203]
+    }
+  ],
+  "movies": [
+    {
+      "id": 101,
+      "title": "Interstellar",
+      "genre": ["Sci-Fi", "Drama"],
+      "release_year": 2014,
+      "director": ["Christopher Nolan"],
+      "scenario": ["Christopher Nolan", "John Nolan"],
+      "production": ["USA", "Wielka Brytania"],
+      "photoMovie": "",
+      "description": "Byt ludzkości na Ziemi dobiega końca wskutek zmian klimatycznych. Grupa naukowców odkrywa tunel czasoprzestrzenny, który umożliwia poszukiwanie nowego domu.",
+      "rating": 8.8,
+      "reviews": []
+    },
+    {
+      "id": 102,
+      "title": "Incepcja",
+      "genre": ["Sci-Fi", "Thriller"],
+      "release_year": 2010,
+      "director": ["Christopher Nolan"],
+      "scenario": ["Christopher Nolan"],
+      "production": ["USA", "Wielka Brytania"],
+      "photoMovie": "",
+      "description": "Czasy, gdy technologia pozwala na wchodzenie w świat snów. Złodziej Cobb ma za zadanie wszczepić myśl do śpiącego umysłu.",
+      "rating": 8.2,
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "John",
+          "userPhoto": "",
+          "stars": 5,
+          "description": "Niesamowity film, pełen emocji i pięknych efektów specjalnych!"
+        }
+      ]
+    }
+  ],
+  "series": [
+    {
+      "id": 201,
+      "title": "Breaking Bad",
+      "genre": ["Przestępstwo", "Drama"],
+      "seasons": 5,
+      "release_year": 2008,
+      "director": ["Vince Gilligan"],
+      "scenario": ["Vince Gilligan"],
+      "production": ["USA"],
+      "photoSeries": "",
+      "description": "Gdy nauczyciel chemii dowiaduje się, że ma raka, postanawia rozpocząć produkcję metamfetaminy, by finansowo zabezpieczyć swoją rodzinę.",
+      "rating": 8.9,
+      "reviews": []
+    },
+    {
+      "id": 202,
+      "title": "Breaking Bad",
+      "genre": ["Przestępstwo", "Drama"],
+      "seasons": 5,
+      "release_year": 2008,
+      "director": ["Matt Duffer", "Ross Duffer"],
+      "scenario": ["Matt Duffer", "Ross Duffer"],
+      "production": ["USA"],
+      "photoSeries": "",
+      "description": "Podczas powrotu do domu znika dwunastoletni Will Byers. Zaginięcie chłopca jest początkiem dziwnych i niebezpiecznych wydarzeń trapiących prowincjonalne miasteczko.",
+      "rating": 8.3,
+      "reviews": []
+    }
+  ],
+  "ranking": {
+    "top_movies": [
+      { "id": 101, "MovieId": 101 },
+      { "id": 102, "MovieId": 102 }
+    ],
+    "top_series": [
+      { "id": 201,  "SeriesId": 201},
+      { "id": 202,  "SeriesId": 202 }
+    ],
+    "top5": [
+      { "id": 301,  "SeriesId": 201},
+      { "id": 302,  "SeriesId": 102 }
+    ]
+  },
+  "news": [
+    {
+      "id": 1,
+      "title": "Nowy film Christophera Nolana zapowiedziany!",
+      "content": "Reżyser Christopher Nolan ogłosił premierę swojego nowego filmu...",
+      "photoNews": "",
+      "date": "2025-03-25",
+      "comments": [
+        {
+          "userName": "Mark",
+          "userPhoto": "",
+          "description": "Nie mogę się doczekać, każdy film Nolana to arcydzieło!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Sezon 5 Stranger Things już w produkcji!",
+      "content": "Netflix potwierdził rozpoczęcie zdjęć do piątego sezonu popularnego serialu...",
+      "photoNews": "",
+      "date": "2025-03-24",
+      "comments": []
+    }
+  ]
+}

@@ -5,8 +5,6 @@ import styles from './StyleSheet.js';
 const LoginScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Login</Text>
-
             <TouchableOpacity
                 style={styles.button}
                 onPress={() => navigation.navigate('TabNav')}
