@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Text, View, TouchableOpacity } from "react-native";
 import styles from './StyleSheet.js';
+import { UserContext } from "../../context/UserContext";
+import data from '../../../db.json';
+
 
 const LoginScreen = ({ navigation }) => {
+    const { setUser } = useContext(UserContext);
+
+    const handleLogin = () => {
+        const firstUser = data.users[0];
+        if (firstUser) {
+            setUser(firstUser);
+            navigation.navigate('TabNav');
+        }
+    };
+
     return (
         <View style={styles.container}>
             <TouchableOpacity
                 style={styles.button}
-                onPress={() => navigation.navigate('TabNav')}
+                onPress={handleLogin}
             >
                 <Text style={styles.buttonText}>Przejdź do TabNav</Text>
             </TouchableOpacity>

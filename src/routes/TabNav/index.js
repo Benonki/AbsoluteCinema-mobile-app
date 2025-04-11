@@ -1,17 +1,25 @@
+import React, { useState, useContext } from 'react';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Image, Text, View, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import {CommonActions, useNavigation} from '@react-navigation/native';
+import { Menu } from 'react-native-paper';
 import { MaterialCommunityIcons, MaterialIcons, FontAwesome } from '@expo/vector-icons';
 import EkranGlownyScreen from "../../screens/EkranGlowny";
 import RankingScreen from "../../screens/Ranking";
 import SerialeScreen from "../../screens/Seriale";
 import FilmyScreen from "../../screens/Filmy";
 import NewsyScreen from "../../screens/Newsy";
+import { UserContext } from '../../context/UserContext';
 
 const Tab = createBottomTabNavigator();
 
 const LogoTitle = ({ title }) => {
+    const { user, setUser } = useContext(UserContext);
     const navigation = useNavigation();
+    const [visible, setVisible] = useState(false);
+
+    const openMenu = () => setVisible(true);
+    const closeMenu = () => setVisible(false);
 
     return (
         <View style={{
@@ -34,8 +42,8 @@ const LogoTitle = ({ title }) => {
             </Text>
 
             <TouchableOpacity onPress={() => navigation.navigate('Home')}
-                style={{position: 'absolute', left: '50%', transform: [{ translateX: -60 }],}}
-                activeOpacity={0.7}
+                              style={{ position: 'absolute', left: '50%', transform: [{ translateX: -60 }] }}
+                              activeOpacity={0.7}
             >
                 <Image
                     source={require('../../../assets/LogoBezTla.png')}
@@ -44,12 +52,74 @@ const LogoTitle = ({ title }) => {
                 />
             </TouchableOpacity>
 
-            <View style={{flex: 1, alignItems: 'flex-end',}}>
-                <Image
-                    source={require('../../../assets/profil.png')}
-                    style={{ width: 40, height: 40, borderRadius: 20 }}
-                    resizeMode="cover"
-                />
+            <View style={{ flex: 1, alignItems: 'flex-end' }}>
+                <Menu
+                    visible={visible}
+                    onDismiss={closeMenu}
+                    anchor={
+                        <TouchableOpacity onPress={openMenu}>
+                            <Image
+                                source={user?.photoUser ? { uri: user.photoUser } : require('../../../assets/profil.png')}
+                                style={{ width: 40, height: 40, borderRadius: 20 }}
+                                resizeMode="cover"
+                            />
+                        </TouchableOpacity>
+                    }
+                    contentStyle={{
+                        backgroundColor: '#D9D9D9',
+                        borderRadius: 20,
+                        padding: 16,
+                        width: 180,
+                    }}
+                >
+                    <View style={{
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        marginBottom: 12,
+                    }}>
+                        <Text style={{
+                            fontWeight: 'bold',
+                            fontSize: 18,
+                            flex: 1,
+                        }}>
+                            {user?.name || 'Gość'}
+                        </Text>
+                        <Image
+                            source={user?.photoUser ? { uri: user.photoUser } : require('../../../assets/profil.png')}
+                            style={{ width: 32, height: 32, borderRadius: 16 }}
+                        />
+                    </View>
+
+                    <TouchableOpacity
+                        onPress={() => { closeMenu(); navigation.navigate('Profil'); }}
+                        style={styles.menuButton}
+                    >
+                        <Text style={styles.menuText}>Profil</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => {
+                            closeMenu();
+                            setUser(null);
+                            navigation.dispatch(
+                                CommonActions.reset({
+                                    index: 0,
+                                    routes: [{ name: 'Logowanie' }],
+                                })
+                            );
+                        }}
+                        style={styles.menuButton}
+                    >
+                        <Text style={styles.menuText}>Ulubione ❤️</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => { closeMenu(); navigation.navigate('Logowanie'); }}
+                        style={styles.menuButton}
+                    >
+                        <Text style={styles.menuText}>Wyloguj się</Text>
+                    </TouchableOpacity>
+                </Menu>
             </View>
         </View>
     );
@@ -94,6 +164,22 @@ const TabNav = () => {
                 }}/>
         </Tab.Navigator>
     );
+};
+
+const styles = {
+    menuButton: {
+        backgroundColor: '#F9F8EB',
+        paddingVertical: 8,
+        paddingHorizontal: 12,
+        borderRadius: 20,
+        alignItems: 'center',
+        marginBottom: 8,
+    },
+    menuText: {
+        fontWeight: 'bold',
+        fontSize: 16,
+        color: 'black',
+    },
 };
 
 export default TabNav;

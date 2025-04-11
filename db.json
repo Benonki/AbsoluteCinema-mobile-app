@@ -5,7 +5,7 @@
       "name": "John",
       "login": "john",
       "password": "123",
-      "photoUser": "",
+      "photoUser": "https://oiot.pl/wp-content/uploads/2022/12/IMG_5121.jpg",
       "numberOfOpinions": 3,
       "watchlist": [103, 203]
     }
@@ -86,8 +86,8 @@
       { "id": 202,  "SeriesId": 202 }
     ],
     "top5": [
-      { "id": 301,  "SeriesId": 201},
-      { "id": 302,  "SeriesId": 102 }
+      { "id": 301,  "ProductionId": 201},
+      { "id": 302,  "ProductionId": 102 }
     ]
   },
   "news": [
@@ -112,6 +112,16 @@
       "photoNews": "",
       "date": "2025-03-24",
       "comments": []
+    }
+  ],
+  "trailers": [
+    {
+      "id": 1,
+      "link": ""
+    },
+    {
+      "id": 2,
+      "link": ""
     }
   ]
 }
