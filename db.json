@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "John",
-      "login": "john",
+      "login": "John",
       "password": "123",
       "photoUser": "https://oiot.pl/wp-content/uploads/2022/12/IMG_5121.jpg",
       "numberOfOpinions": 3,
@@ -19,10 +19,30 @@
       "director": ["Christopher Nolan"],
       "scenario": ["Christopher Nolan", "John Nolan"],
       "production": ["USA", "Wielka Brytania"],
-      "photoMovie": "",
+      "photoMovie": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
       "description": "Byt ludzkości na Ziemi dobiega końca wskutek zmian klimatycznych. Grupa naukowców odkrywa tunel czasoprzestrzenny, który umożliwia poszukiwanie nowego domu.",
       "rating": 8.8,
-      "reviews": []
+      "reviews": [],
+      "actors": [
+        {
+          "id": 1,
+          "name": "Matthew McConaughey",
+          "characterName": "Cooper",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Anne Hathaway",
+          "characterName": "Amelia Brand",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTRhNzQ3NGMtZmQ1Mi00ZTViLTk3OTgtOTk0YzE2YTgwMmFjXkEyXkFqcGdeQXVyNzg5MzIyOA@@._V1_.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Jessica Chastain",
+          "characterName": "Murph (dorosła)",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMzU3OTk1Mz@._V1_.jpg"
+        }
+      ]
     },
     {
       "id": 102,
@@ -32,7 +52,7 @@
       "director": ["Christopher Nolan"],
       "scenario": ["Christopher Nolan"],
       "production": ["USA", "Wielka Brytania"],
-      "photoMovie": "",
+      "photoMovie": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg",
       "description": "Czasy, gdy technologia pozwala na wchodzenie w świat snów. Złodziej Cobb ma za zadanie wszczepić myśl do śpiącego umysłu.",
       "rating": 8.2,
       "reviews": [
@@ -42,6 +62,134 @@
           "userPhoto": "",
           "stars": 5,
           "description": "Niesamowity film, pełen emocji i pięknych efektów specjalnych!"
+        }
+      ],
+      "actors": [
+        {
+          "id": 4,
+          "name": "Leonardo DiCaprio",
+          "characterName": "Cobb",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMjI0MTg3MzI0M15BMl5BanBnXkFtZTcwMzQyODU2Mw@@._V1_.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Joseph Gordon-Levitt",
+          "characterName": "Arthur",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BZTk5ZGQ0OGQtYWYwNi00OTNkLTg1ZDYtODRmNThiYzVlZGQ2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Ellen Page",
+          "characterName": "Ariadne",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTU3MzM3MDI3NF5BMl5BanBnXkFtZTcwOTQ1MjY5Ng@@._V1_.jpg"
+        }
+      ]
+    },
+	{
+      "id": 103,
+      "title": "The Shawshank Redemption",
+      "genre": ["Drama"],
+      "release_year": 1994,
+      "director": ["Frank Darabont"],
+      "scenario": ["Frank Darabont"],
+      "production": ["USA"],
+      "photoMovie": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+      "description": "Niesłusznie skazany na dożywocie bankier, stara się przetrwać w brutalnym świecie więzienia, zachowując przy tym nadzieję i godność.",
+      "rating": 9.3,
+      "reviews": [],
+      "actors": [
+        {
+          "id": 5,
+          "name": "Tim Robbins",
+          "characterName": "Andy Dufresne",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTI1OTYxNzAxOF5BMl5BanBnXkFtZTYwNTE5ODI4._V1_.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Morgan Freeman",
+          "characterName": "Ellis Boyd 'Red' Redding",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BODc2ODQ0NTE2MV5BMl5BanBnXkFtZTcwOTc2NTkwOQ@@._V1_.jpg"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "title": "The Dark Knight",
+      "genre": ["Action", "Crime", "Drama"],
+      "release_year": 2008,
+      "director": ["Christopher Nolan"],
+      "scenario": ["Christopher Nolan", "Jonathan Nolan"],
+      "production": ["USA", "Wielka Brytania"],
+      "photoMovie": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
+      "description": "Batman wraz z pomocą komisarza Gordona i prokuratora Harveya Denta podejmuje walkę z przerażającym i nieprzewidywalnym Jokerem.",
+      "rating": 9.0,
+      "reviews": [],
+      "actors": [
+        {
+          "id": 7,
+          "name": "Christian Bale",
+          "characterName": "Bruce Wayne / Batman",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTkxNzA3MDQ3MV5BMl5BanBnXkFtZTgwNzkxNzYzMTI@._V1_.jpg"
+        },
+        {
+          "id": 8,
+          "name": "Heath Ledger",
+          "characterName": "Joker",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTI2NTY0NzA4MF5BMl5BanBnXkFtZTYwMjE1MDE0._V1_.jpg"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "title": "Pulp Fiction",
+      "genre": ["Crime", "Drama"],
+      "release_year": 1994,
+      "director": ["Quentin Tarantino"],
+      "scenario": ["Quentin Tarantino"],
+      "production": ["USA"],
+      "photoMovie": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      "description": "Historie kilku osób związanych z półświatkiem przestępczym w Los Angeles przeplatają się w nieoczekiwany sposób.",
+      "rating": 8.9,
+      "reviews": [],
+      "actors": [
+        {
+          "id": 9,
+          "name": "John Travolta",
+          "characterName": "Vincent Vega",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTMyMjZlYzgtZWRjOC00OTRmLTllZTktMmM1ODVmNjljMTQyXkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg"
+        },
+        {
+          "id": 10,
+          "name": "Samuel L. Jackson",
+          "characterName": "Jules Winnfield",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTQ1NTQwMTYxNl5BMl5BanBnXkFtZTYwMjA1MzY1._V1_.jpg"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "title": "The Godfather",
+      "genre": ["Crime", "Drama"],
+      "release_year": 1972,
+      "director": ["Francis Ford Coppola"],
+      "scenario": ["Francis Ford Coppola", "Mario Puzo"],
+      "production": ["USA"],
+      "photoMovie": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      "description": "Opowieść o rodzinie mafijnej Corleone, skupiająca się na przemianie Michaela Corleone z niechętnego rodzinnego interesu w bezwzględnego bossa.",
+      "rating": 9.2,
+      "reviews": [],
+      "actors": [
+        {
+          "id": 11,
+          "name": "Marlon Brando",
+          "characterName": "Don Vito Corleone",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTg3MDYyMDE5OF5BMl5BanBnXkFtZTcwNjgyNTEzNA@@._V1_.jpg"
+        },
+        {
+          "id": 12,
+          "name": "Al Pacino",
+          "characterName": "Michael Corleone",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTQzMzg1ODAyNl5BMl5BanBnXkFtZTYwMjAxODQ1._V1_.jpg"
         }
       ]
     }
@@ -56,24 +204,148 @@
       "director": ["Vince Gilligan"],
       "scenario": ["Vince Gilligan"],
       "production": ["USA"],
-      "photoSeries": "",
+      "photoSeries": "https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg",
       "description": "Gdy nauczyciel chemii dowiaduje się, że ma raka, postanawia rozpocząć produkcję metamfetaminy, by finansowo zabezpieczyć swoją rodzinę.",
       "rating": 8.9,
-      "reviews": []
+      "reviews": [],
+      "actors": [
+        {
+          "id": 7,
+          "name": "Bryan Cranston",
+          "characterName": "Walter White",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTczNjM0NDY0Ml5BMl5BanBnXkFtZTcwMTk1MjMzNQ@@._V1_.jpg"
+        },
+        {
+          "id": 8,
+          "name": "Aaron Paul",
+          "characterName": "Jesse Pinkman",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BOTU0NjU0NzczN15BMl5BanBnXkFtZTcwMzM1OTQwOQ@@._V1_.jpg"
+        },
+        {
+          "id": 9,
+          "name": "Anna Gunn",
+          "characterName": "Skyler White",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTU4OTY1MjQ5M15BMl5BanBnXkFtZTcwMTMwODg3OA@@._V1_.jpg"
+        }
+      ]
     },
     {
       "id": 202,
-      "title": "Breaking Bad",
-      "genre": ["Przestępstwo", "Drama"],
+      "title": "Stranger Things",
+      "genre": ["Sci-Fi", "Horror"],
       "seasons": 5,
-      "release_year": 2008,
+      "release_year": 2016,
       "director": ["Matt Duffer", "Ross Duffer"],
       "scenario": ["Matt Duffer", "Ross Duffer"],
       "production": ["USA"],
-      "photoSeries": "",
+      "photoSeries": "https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
       "description": "Podczas powrotu do domu znika dwunastoletni Will Byers. Zaginięcie chłopca jest początkiem dziwnych i niebezpiecznych wydarzeń trapiących prowincjonalne miasteczko.",
       "rating": 8.3,
-      "reviews": []
+      "reviews": [],
+      "actors": [
+        {
+          "id": 10,
+          "name": "Winona Ryder",
+          "characterName": "Joyce Byers",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTQ3NzM3MTc2NF5BMl5BanBnXkFtZTcwODMxNjA0NA@@._V1_.jpg"
+        },
+        {
+          "id": 11,
+          "name": "David Harbour",
+          "characterName": "Jim Hopper",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BZTk5ZGQ0OGQtYWYwNi00OTNkLTg1ZDYtODRmNThiYzVlZGQ2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+        },
+        {
+          "id": 12,
+          "name": "Millie Bobby Brown",
+          "characterName": "Eleven",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTRjMmFiMGQtZDE2YS00YzFiLThkNzUtODk0ZGQ0ZDRmODVkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "title": "Game of Thrones",
+      "genre": ["Fantasy", "Drama", "Adventure"],
+      "seasons": 8,
+      "release_year": 2011,
+      "director": ["David Benioff", "D.B. Weiss"],
+      "scenario": ["David Benioff", "D.B. Weiss"],
+      "production": ["USA", "Wielka Brytania"],
+      "photoSeries": "https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg",
+      "description": "Walka o władzę między rodami szlacheckimi w fantastycznym świecie Westeros, gdzie przetrwanie wymaga zarówno sprytu, jak i siły.",
+      "rating": 9.3,
+      "reviews": [],
+      "actors": [
+        {
+          "id": 17,
+          "name": "Emilia Clarke",
+          "characterName": "Daenerys Targaryen",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BNjg3OTg4MDczMl5BMl5BanBnXkFtZTgwODc0NzUwNjE@._V1_.jpg"
+        },
+        {
+          "id": 18,
+          "name": "Kit Harington",
+          "characterName": "Jon Snow",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMTM2MTE5NzAwMF5BMl5BanBnXkFtZTcwNjg5NjQ5Nw@@._V1_.jpg"
+        }
+      ]
+    },
+    {
+      "id": 204,
+      "title": "The Witcher",
+      "genre": ["Fantasy", "Adventure", "Action"],
+      "seasons": 3,
+      "release_year": 2019,
+      "director": ["Lauren Schmidt Hissrich"],
+      "scenario": ["Lauren Schmidt Hissrich"],
+      "production": ["USA", "Polska"],
+      "photoSeries": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg",
+      "description": "Geralt z Rivii, mutant i zabójca potworów, przemierza Królestwa Północy, walcząc z demonami i odkrywając swoje przeznaczenie.",
+      "rating": 8.2,
+      "reviews": [],
+      "actors": [
+        {
+          "id": 19,
+          "name": "Henry Cavill",
+          "characterName": "Geralt z Rivii",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BODI0MTYzNTYxM15BMl5BanBnXkFtZTcwNDczMzc3OA@@._V1_.jpg"
+        },
+        {
+          "id": 20,
+          "name": "Anya Chalotra",
+          "characterName": "Yennefer z Vengerbergu",
+          "actorPhoto": "data:image/jpeg;base64,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"
+        }
+      ]
+    },
+    {
+      "id": 205,
+      "title": "The Mandalorian",
+      "genre": ["Sci-Fi", "Adventure", "Action"],
+      "seasons": 3,
+      "release_year": 2019,
+      "director": ["Jon Favreau"],
+      "scenario": ["Jon Favreau"],
+      "production": ["USA"],
+      "photoSeries": "https://m.media-amazon.com/images/M/MV5BZDhlMzY0ZGItZTcyNS00ZTAxLWIyMmYtZGQ2ODg5OWZiYmJkXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_.jpg",
+      "description": "Samotny łowca nagród przemierza galaktykę, wykonując niebezpieczne misje, aż jego życie zmienia się na zawsze, gdy znajduje małego Grogu.",
+      "rating": 8.7,
+      "reviews": [],
+      "actors": [
+        {
+          "id": 21,
+          "name": "Pedro Pascal",
+          "characterName": "Din Djarin / The Mandalorian",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BZTk5ZGQ0OGQtYWYwNi00OTNkLTg1ZDYtODRmNThiYzVlZGQ2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+        },
+        {
+          "id": 22,
+          "name": "Gina Carano",
+          "characterName": "Cara Dune",
+          "actorPhoto": "https://m.media-amazon.com/images/M/MV5BMjE5NDU5NzkyN15BMl5BanBnXkFtZTcwNjg4NDQzNw@@._V1_.jpg"
+        }
+      ]
     }
   ],
   "ranking": {
@@ -82,12 +354,12 @@
       { "id": 102, "MovieId": 102 }
     ],
     "top_series": [
-      { "id": 201,  "SeriesId": 201},
-      { "id": 202,  "SeriesId": 202 }
+      { "id": 201, "SeriesId": 201 },
+      { "id": 202, "SeriesId": 202 }
     ],
     "top5": [
-      { "id": 301,  "ProductionId": 201},
-      { "id": 302,  "ProductionId": 102 }
+      { "id": 301, "ProductionId": 201 },
+      { "id": 302, "ProductionId": 102 }
     ]
   },
   "news": [
@@ -95,7 +367,7 @@
       "id": 1,
       "title": "Nowy film Christophera Nolana zapowiedziany!",
       "content": "Reżyser Christopher Nolan ogłosił premierę swojego nowego filmu...",
-      "photoNews": "",
+      "photoNews": "https://m.media-amazon.com/images/M/MV5BNjE3NDQyOTYyMV5BMl5BanBnXkFtZTcwODcyODU2Mw@@._V1_.jpg",
       "date": "2025-03-25",
       "comments": [
         {
@@ -109,7 +381,7 @@
       "id": 2,
       "title": "Sezon 5 Stranger Things już w produkcji!",
       "content": "Netflix potwierdził rozpoczęcie zdjęć do piątego sezonu popularnego serialu...",
-      "photoNews": "",
+      "photoNews": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg",
       "date": "2025-03-24",
       "comments": []
     }

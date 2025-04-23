@@ -10,6 +10,7 @@ import SerialeScreen from "../../screens/Seriale";
 import FilmyScreen from "../../screens/Filmy";
 import NewsyScreen from "../../screens/Newsy";
 import { UserContext } from '../../context/UserContext';
+import * as SecureStore from "expo-secure-store";
 
 const Tab = createBottomTabNavigator();
 
@@ -20,6 +21,22 @@ const LogoTitle = ({ title }) => {
 
     const openMenu = () => setVisible(true);
     const closeMenu = () => setVisible(false);
+
+    const handleLogout = async () => {
+        try {
+            await SecureStore.deleteItemAsync('autoLoginUser');
+        } catch (error) {
+            console.error('Błąd podczas usuwania danych autologowania:', error);
+        }
+
+        setUser(null);
+        navigation.dispatch(
+            CommonActions.reset({
+                index: 0,
+                routes: [{ name: 'Logowanie' }],
+            })
+        );
+    };
 
     return (
         <View style={{
@@ -98,23 +115,16 @@ const LogoTitle = ({ title }) => {
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        onPress={() => {
-                            closeMenu();
-                            setUser(null);
-                            navigation.dispatch(
-                                CommonActions.reset({
-                                    index: 0,
-                                    routes: [{ name: 'Logowanie' }],
-                                })
-                            );
-                        }}
+                        onPress={() => { closeMenu(); navigation.navigate('Ulubione'); }}
                         style={styles.menuButton}
                     >
                         <Text style={styles.menuText}>Ulubione ❤️</Text>
                     </TouchableOpacity>
-
                     <TouchableOpacity
-                        onPress={() => { closeMenu(); navigation.navigate('Logowanie'); }}
+                        onPress={async () => {
+                            closeMenu();
+                            await handleLogout();
+                        }}
                         style={styles.menuButton}
                     >
                         <Text style={styles.menuText}>Wyloguj się</Text>

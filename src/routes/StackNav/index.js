@@ -3,6 +3,9 @@ import { Image, View, Text } from 'react-native';
 import LoginScreen from "../../screens/Login";
 import RejestracjaScreen from "../../screens/Rejestracja";
 import TabNav from "../TabNav";
+import ProfilScreen from "../../screens/Profil";
+import UlubioneScreen from "../../screens/Ulubione";
+import OpisScreen from "../../screens/Opis";
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +35,9 @@ const StackNav = () => {
             <Stack.Screen name="Logowanie" component={LoginScreen} options={{ headerTitle: () => <LogoTitle title="Logowanie" /> }}/>
             <Stack.Screen name="Rejestracja" component={RejestracjaScreen} options={{ headerTitle: () => <LogoTitle title="Rejestracja" /> }}/>
             <Stack.Screen name="TabNav" component={TabNav} options={{ headerShown: false }}/>
+            <Stack.Screen name="Profil" component={ProfilScreen} options={{ headerTitle: () => <LogoTitle title="Profil" /> }}/>
+            <Stack.Screen name="Ulubione" component={UlubioneScreen} options={{ headerTitle: () => <LogoTitle title="Ulubione ❤️" /> }}/>
+            <Stack.Screen name="Opis" component={OpisScreen} options={{ headerTitle: () => <LogoTitle title="Opis" /> }}/>
         </Stack.Navigator>
     );
 };
