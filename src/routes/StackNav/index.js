@@ -6,6 +6,7 @@ import TabNav from "../TabNav";
 import ProfilScreen from "../../screens/Profil";
 import UlubioneScreen from "../../screens/Ulubione";
 import OpisScreen from "../../screens/Opis";
+import NewsScreen from "../../screens/News";
 
 const Stack = createNativeStackNavigator();
 
@@ -38,6 +39,7 @@ const StackNav = () => {
             <Stack.Screen name="Profil" component={ProfilScreen} options={{ headerTitle: () => <LogoTitle title="Profil" /> }}/>
             <Stack.Screen name="Ulubione" component={UlubioneScreen} options={{ headerTitle: () => <LogoTitle title="Ulubione ❤️" /> }}/>
             <Stack.Screen name="Opis" component={OpisScreen} options={{ headerTitle: () => <LogoTitle title="Opis" /> }}/>
+            <Stack.Screen name="News" component={NewsScreen} options={{ headerTitle: () => <LogoTitle title="News" /> }}/>
         </Stack.Navigator>
     );
 };
