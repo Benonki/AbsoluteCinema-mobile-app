@@ -20,7 +20,7 @@ A mobile app built with JavaScript and React Native, inspired by Filmweb, allowi
 	```bash
 	npx expo start
     ```
-2. You can either open http://localhost:8081/ on your PC, use the phone emulator, or scan the QR code (Recommended!!!) with Expo Go app on your phone (it needs to be SDK 52).
+2. You can either use the phone emulator, or scan the QR code (Recommended!!!) with Expo Go app on your phone (it needs to be SDK 52).
 
 ## 🖼️ Showcase
 

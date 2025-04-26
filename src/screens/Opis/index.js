@@ -161,6 +161,14 @@ const OpisScreen = ({ route }) => {
                             <Text style={styles.infoLabel}>Reżyser: </Text>
                             {item.director?.join(', ') || 'Nieznany'}
                         </Text>
+                        <Text style={styles.infoText}>
+                            <Text style={styles.infoLabel}>Scenariusz: </Text>
+                            {item.scenario?.join(', ') || 'Nieznany'}
+                        </Text>
+                        <Text style={styles.infoText}>
+                            <Text style={styles.infoLabel}>Produkcja: </Text>
+                            {item.production?.join(', ') || 'Nieznana'}
+                        </Text>
                         <View style={styles.ratingContainer}>
                             <Text style={styles.rating}>★ {item.rating.toFixed(1)}/10</Text>
                         </View>
