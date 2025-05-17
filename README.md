@@ -15,6 +15,10 @@ A mobile app built with JavaScript and React Native, inspired by Filmweb, allowi
    ```bash
    npm i
    ```
+	- In case of any `high` vulnerabilities:
+      ```bash
+      npm audit fix
+       ```
 ## 🚀 Running the App
 1. Open console and start Expo:
 	```bash
